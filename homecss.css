@@ -166,7 +166,70 @@ nav ul li a{
   font-size: 30px;
   padding: 0px 2px;
 }
+.copyright{
+      background-color: #00000060;
+      padding: 20px 20px;
+      margin: 0px -12vw;
+      text-align: center;
+    }
+.copyright span{
+      font-family: "itim";
+    }
+  /* ——————————skill SEXTION—————————— */
+#skill-section{
+  padding: 2em 5vw 0px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+.skill-container {
+  width: 90%;
+  display: inline-block;
+  max-width: 800px;
+  border-radius: 8px;
+  padding: 20px 3vw 50px;
+  box-shadow: inset 2px 2px 4px #ffffff90, 6px 8px 15px #00000090;
+  background-image: linear-gradient(200deg,#00000000 .1%,#00008090 29.9%,#00000000 70%);
+}
+.skill-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  text-align: left;
+}
+.skill-bar {
+  height: 5px;
+  background: #ffffff40;
+  border-radius: 10px;
+}
+.skill-per {
+  height: 5px;
+  background: salmon;
+  border-radius: 10px;
+  position: relative;
+  animation: fillbars 6s; 
+} 
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(40%);
+  color: #111;
+}
+@keyframes fillbars{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
 
+  }
+}
 /* ——————————about SEXTION—————————— */
 
   .about{
