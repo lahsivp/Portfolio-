@@ -1,0 +1,457 @@
+
+    *{
+   margin: 0px;
+   padding: 0px;
+   color: black;
+   font-size: 16px;
+   scroll-behavior: smooth;
+   transition: .3s;
+   list-style: none;
+   text-decoration: none;
+   color: white;
+   /* border: .1px solid #fff; */
+   font-size: 14px; /* 1em=16px */
+    }
+
+    i:hover{
+    color: tomato;
+    text-shadow: 1px 1px 4px #ffffffbd;
+    }
+  body{
+   /* font-family: Sans-Serif; */
+    font-family: "poppins",Arial;
+    /* background-color: white; */
+    background-image: linear-gradient(90deg,
+    #000010ee,#000030ee,#000020ee);
+    overflow-x: hidden;
+    height: auto;
+    overflow-y: scroll;
+  }
+  ::-webkit-scrollbar{
+    width: 12px;
+  }
+  ::-webkit-scrollbar-track{
+    padding: 5px 1px;
+    background: #00006650;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #80808050;
+    border-radius: 25px;
+    height: 10%;
+    box-shadow: inset 1px 2px 2px black;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    box-shadow: inset 1px 1px 2px lightgray;
+  }
+
+ nav{
+  background-image: linear-gradient(60deg,#000030 1%,#000066 29%,#000040 70%);
+  width: 100vw;
+  height: 70px;
+  padding: 14px 10vw;
+  top: 0px;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 1;
+}
+.logo{
+  font-size: 40px;
+  /* margin-left: 5vw; */
+  font-weight: 600;
+  font-family: "itim";
+}
+nav ul{
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 45px; 
+  cursor: pointer;
+  margin: 0px 1vw;
+}
+nav ul li a{
+  font-size: 20px;
+}
+.checkbtn{
+  float: right;
+  cursor: pointer;
+  display: none;
+  text-shadow: 2px 2px 2px #0000004e;
+}
+#check{
+  display: none;
+}
+#hambar{
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+
+
+/* ——————————name CONTENT—————————— */
+
+.namediv{
+  margin-top: 70px;
+ padding: 100px 10vw 140px;
+ text-align: center;
+}
+ .maindiv{
+ display: inline-block;
+ text-align: left;
+ width: 40vw;
+ 
+ }
+ .vishalimg{
+  width: 15em;
+  height: 15em;
+  background-image: url('/vishalbioimg.png');
+  box-shadow:inset 2px 2px 3px #00000050 , inset -2px -4px 3px #000000db , -0px -5px 40px 6px #ffffff70;
+  background-repeat: no-repeat;
+  background-size: 15em 15.4em;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+  margin-inline-end: 3.5vw;
+ }
+#downloadcvbutton{
+  margin: 15px 10px 0px 0px;
+  padding: 8px 18px;
+  border: none;
+  box-shadow:inset -1.5px -1.5px 1.5px #0000006e ,inset 1.5px 1.5px 1.2px #ff9163cf;
+  font-size: 12px;
+  background-color: tomato;
+  border-radius: 25px;
+  font-weight: 600;
+ }
+#downloadcvbutton:hover{
+  box-shadow:inset 1px 1px 2px #00000080 ,inset -1px -1px 2px #ff9163cf;
+}
+
+
+  #contactmebutton{
+  padding: 8px 18px;
+  border: 1.5px solid salmon;
+  font-size: 12px;
+  background-color: transparent;
+  border-radius: 25px;
+  font-weight: 600;
+  }
+  #contactmebutton:hover{
+    background: linear-gradient(to right,#0083ff,cyan,lightgreen);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    }
+
+ .name{
+  font-family: "Itim",cursive;
+  font-size: 60px;
+  font-weight: bold;
+  color: tomato;
+  line-height: 70px;
+ }
+ .jobrole span{
+  font-size: 45px;
+  font-weight: bold;
+  background: linear-gradient(to right,#0083ff,cyan,lightgreen);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  line-height: 45px;
+ }
+ .info{
+   line-height: 20px;
+   color: lightgray;
+ }
+.maindiv .fa-brands ,#hello {
+  margin-top: 25px;
+  font-size: 30px;
+  padding: 0px 2px;
+}
+
+/* ——————————about SEXTION—————————— */
+
+  .about{
+    display: inline-block;
+    width: 99vw;
+  }
+  .aboutmeimg{
+  width: 12em;
+  border-radius: 20px 20px 20px 0px;
+  border-left: 5px solid #ff8b5c;
+  border-bottom: 5px solid #a1390e;
+  display: inline-block;
+  margin: 40px 10px 20px 10vw;
+  /* backdrop-filter: blur(10px); */
+  }
+  .information{
+  display: inline-block;
+  width: 55vw;
+  }
+  .information span{
+   font-size: 2em;
+   color: tomato;
+  }
+  .big{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  }
+  .small{
+    color: lightgrey;
+  }
+  .abright,.ableft{
+  display: inline-block;
+  margin-left: 8px;
+  }
+  
+/* ——————————project SEXTION—————————— */
+
+ .project{
+   width: 100vw;
+   text-align: center;
+}
+
+h3,.about h1,h2{
+  margin: 70px 0px 0px 35vw;
+  font-size: 2em;
+  width: 300px;
+  border-bottom: 2px solid tomato;
+} 
+.project1 ,.project2 ,.project3 {
+  width: 290px;
+  max-height: 430px;
+  min-height: 420px;
+  border-radius: 8px;
+  background-image: linear-gradient(190deg,#00000000 .1%,navy 29.9%,#00000000 70%);
+  display: inline-block;
+  padding: 14px;
+  /* box-shadow: inset -3px -2px 1px #ffffff50; */
+  text-align: left;
+  position: relative;
+  box-shadow: inset 2px 2px 4px #ffffff90, 6px 8px 15px #00000090;
+}
+.project_hoverdiv{
+  margin: 30px 3vw;
+  display: inline-block;
+  width: 300px;
+  height: 440px;
+}
+.project6,.project5,.project4{
+  border-radius: 10px;
+  border-bottom-right-radius: 28px;
+  width: auto;
+  height: 170px;
+  background-position: center;
+  background-size: cover;
+}
+.project1:hover,.project2:hover,.project3:hover{
+  height: 430px;
+  width: 295px;
+  top: -.5px;
+  left: -.5px;
+}
+
+.project4{
+  background-image: url('/project4.gif');
+  background-color: salmon;
+}
+.project5{
+  background-image: url('/project5.gif');
+}
+.project6{
+  background-image: url('/project6.gif');
+}
+
+.project p{
+  font-size: 16px;
+  line-height: 25px;
+}
+.project span{
+  line-height: 80px;
+  font-size: 2em;
+}
+.project a{
+  text-decoration: none;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+/* ——————————footer SEXTION—————————— */
+
+footer input{
+  border-radius: 25px;
+  border: none;
+  margin: 0px 0px 10px;
+  padding: 5px 10px;
+  color: black;
+  outline: none;
+  background-color: #eaeaea;
+  box-shadow: inset 2px 2px 4px #ffffff90, 6px 8px 15px #00000090;
+}
+textarea{
+  border-radius: 10px;
+  border: none;
+  color: black;
+  background-color: #eaeaea;
+  padding: 12px 12px;
+  box-shadow: inset 2px 2px 2px white, 6px 6px 16px #00000090;
+  outline: none;
+}
+
+
+footer{
+background-image: linear-gradient(190deg,#00000000 .1%,navy 29.9%,#00000000 70%);
+  padding: 10px 12vw;
+}
+#footertext{
+  font-size: 22px;
+  text-transform: uppercase;
+  margin: 10px 0px 25px;
+}
+footer li{
+  list-style: none;
+  line-height: 2em;
+}
+footer span{
+  font-family: "poppins",Arial;
+  font-weight: 200;
+}
+#footer-fa-brands i{
+  font-size: 1.8em;
+  margin-right: 5px;
+}
+.footercontact button{
+  border: none;
+  padding: 6px 15px;
+  margin: 30px 0px;
+  color: black;
+  border-radius: 5px;
+  background-color: #c0c0c0;
+  box-shadow: inset 2px 2px 3px white,inset -1.5px -1.5px 3px gray;
+}
+.footercontact button:hover{
+  box-shadow: inset 2px 2px 3px grey,inset -1.5px -1.5px 3px white;
+}
+
+.contact-form{
+  float: right;
+}
+
+/* #fa-brands{
+  display: inline-block;
+} */
+
+
+
+/* ——————————MEDDIA SEXTION—————————— */
+
+@media (max-width: 700px){
+  
+  .checkbtn{
+  display: block;
+ }
+nav ul{ color: white;
+  position: fixed;
+  width: 60vw;
+  height: 40em;
+  border-radius: 10px;
+  background-image: linear-gradient(180deg,#000032db .1%,#000066db 29.9%,#00012adb 70%);
+  box-shadow: 0px 3px 4px 2px #00032f46;
+  top: 70px;
+  left: -100%;
+  text-align: center;
+  padding-top: 30px;
+  backdrop-filter: blur(3px);
+ }
+ nav ul li{
+   display: block;
+   margin: 10px 10px;
+   line-height: 70px;
+ }
+ #check:checked ~ ul{
+   left: -10px;
+ }
+ 
+nav ul li a:hover{
+  padding: 5px 10px ;
+  background: none;
+  border-bottom: 1.5px solid salmon;
+  text-shadow: 1px 2px 4px salmon;
+}
+
+ /* ——————————name CONTENT—————————— */
+ .namediv{
+  padding: 80px 10vw 100px;
+ }
+.maindiv{
+  width: 80vw;
+}
+.vishalimg{ 
+  width: 12em;
+  height: 12em;
+ background-size: 12em 12.2em;
+ margin-inline-end: 15vw;
+}
+ .name{
+  font-size: 50px;
+  line-height: 65px;
+ }
+ .jobrole span{
+  font-size: 30px;
+ }
+ .info{
+   font-size: 10px;
+ }
+.maindiv .fa-brands ,#hello {
+  font-size: 25px;
+}
+
+
+.about h1{
+ margin-left: 10vw;
+}
+.information{
+ padding: 10px 10vw 10px 10vw;
+ width: 80vw;
+ float: left;
+}
+
+
+h3,h2{
+  margin-left: 10vw;
+}
+
+.footercontactinfo{
+  display: inline-block;
+}
+.contact-form{
+  display: block;
+  float: left;
+  margin-right: 20vw;
+}
+
+
+}
+
+@media (min-width:701px) and (max-width:5000px){
+  li a{
+    width: 65vw;
+    position: relative;
+  }
+  li a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  background-color: tomato;
+  transition: all ease 1s;
+  height: 2px;
+  
+  }
+  
+  li a:hover::after{
+  border-radius: 0px 5px 5px 0px ;
+  width: 111%;
+  }
+  
+}

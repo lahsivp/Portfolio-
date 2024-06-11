@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+ <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="homecss.css">
+  
+  <title>Document</title>
+  
+  <style>
+    .copyright{
+      background-color: #00000060;
+      padding: 20px 20px;
+      margin: 0px -12vw;
+      text-align: center;
+    }
+    .copyright span{
+      font-family: "itim";
+    }
+  
+  
+  
+#skill-section{
+  padding: 2em 5vw 0px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+.skill-container {
+  width: 90%;
+  display: inline-block;
+  max-width: 800px;
+  border-radius: 8px;
+  padding: 20px 3vw 50px;
+  box-shadow: inset 2px 2px 4px #ffffff90, 6px 8px 15px #00000090;
+  background-image: linear-gradient(200deg,#00000000 .1%,#00008090 29.9%,#00000000 70%);
+}
+.skill-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  text-align: left;
+}
+.skill-bar {
+  height: 5px;
+  background: #ffffff40;
+  border-radius: 10px;
+}
+.skill-per {
+  height: 5px;
+  background: salmon;
+  border-radius: 10px;
+  position: relative;
+  animation: fillbars 6s; 
+} 
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(40%);
+  color: #111;
+}
+
+@keyframes fillbars{
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+
+  }
+}
+
+
+  </style>
+</head>
+<body>
+<header>
+    <nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+  <i id="hambar" class="fa-solid fa-bars-staggered"></i>
+</label>
+<label for="" class="logo">Lahsiv</label>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a class="active" href="#">Resume</a></li>
+<li><a href="#skill-section">Skill</a></li>
+<li><a href="mailto:lahsiv.833@gmail.com">Email us</a></li>
+</ul>
+  </nav>
+ <div class="namediv">
+    <div class="vishalimg"></div>
+      <div class="maindiv" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
+    <p id="hello">Hello,i'm</p>
+    <p class="name"> Vishal Pathak</p>
+    <p class="jobrole">A <span>Web Developer</span></p>
+    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+    nesciunt a Error eius voluptatibus sequi suscipit consequatur Lorem ipsum dolor sit amet obcaecati.</p>
+      <div id="fa-brands">
+      <a href="mailto:lahsiv.833@gmail.com">
+    <i class="fa-brands fa-google">
+      </i>
+      </a>
+    <a href="https://github.com/lahsivp"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.instagram.com/iam_vishal_2004?igsh=MXJsNWxib21pM2ZsZw=="><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <button id="downloadcvbutton"><a href="Vishal Resume.pdf">Download CV</a> </button> <button id="contactmebutton"><a href="Form.html">Contact Me </a></button>
+    </div>
+    </div>
+  </header>
+<main>
+    <div class="about"  id="about">
+    <h1>About Me</h1>
+    <img class="aboutmeimg" src="/vishal.png">
+    <div class="information" data-aos="fade-right"
+     data-aos-offset="200"
+     data-aos-easing="ease-in-sine">
+<p><span>I </span> am a creative web developer from the state of Delhi and I am excited about creating stunning websites. My expertise lies in translating designs into fully functional websites while utilizing my development skills to enhance and customize their features. My goal is to craft visually appealing, user-friendly websites that provide a seamless browsing experience.</p><br>
+<p>In my leisure time, I improve my website design skills and, learn something new about to web designing and spending quality time with my family.</p><br>
+<div class="ableft">
+<p class="big">Name</p><p class="small">Vishal Pathak</p>
+<p class="big">E-mail</p><p class="small">lahsiv.833@gmail.com</p>
+<p class="big">Phone no.</p><p class="small">  ( +91 ) 9599 630 989</p>
+</div>
+<div class="abright">
+  <p class="big">Date of Birth</p><p class="small">12/july/2004</p>
+  <p class="big">Nationality</p><p class="small">Indian</p>
+  <p class="big">Qualification</p><p class="small">10 &amp; 12 from C.B.S.E. and pursuing B.A.</p>
+  </div>
+</div>
+    </div>
+    <br>
+    <h2>Skills</h2>
+    <br>
+    <section id="skill-section">
+    <div class="skill-container">
+      <div class="skill-name"> HTML </div>
+      <div class="skill-bar">
+        <div class="skill-per" per="90%" style="max-width: 90%;"></div>
+      </div>
+
+      <div class="skill-name"> CSS </div>
+      <div class="skill-bar">
+        <div class="skill-per" per="75%" style="max-width: 75%;"></div>
+      </div>
+
+      <div class="skill-name"> Javascript </div>
+      <div class="skill-bar">
+        <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+      </div>
+      <div class="skill-name"> PHP </div>
+      <div class="skill-bar">
+        <div class="skill-per" per="50%" style="max-width: 50%;"></div>
+      </div>
+      <div class="skill-name"> Jquery </div>
+      <div class="skill-bar">
+        <div class="skill-per" per="40%" style="max-width: 40%;"></div>
+      </div>
+    </div>
+
+  </section>
+    <br>
+    <h3>My Projects</h3>
+    <br>
+  <div class="project">
+
+    <div class="project_hoverdiv" data-aos="fade-right"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">
+
+      <div class="project1" >
+        <div class="project4"></div>
+        <span>Website Design</span>
+        <p>I Created a Website related to responsive (easy to adapt different type of screen width or size)and it's a Purpose Forward's Organisation</p>
+        <br><br>
+        <a href="/1stproject/Index.html">Visit »</a>
+      </div>
+    </div>
+    
+    <div class="project_hoverdiv" data-aos="fade-right"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">
+
+      <div class="project2">
+        <div class="project5"></div>
+        <span>New creative</span>
+        <p>Lorem ipsum dolor sit amet, consectetur elit. Commodi mollitia quibusdam  quam ctus rem fugit corporis quis, magnam earum..</p>
+      <br><br>
+      <a href="">Visit »</a>
+    </div>
+  </div>
+    
+    <div class="project_hoverdiv" data-aos="fade-right"
+     data-aos-offset="100"
+     data-aos-easing="ease-in-sine">
+
+      <div class="project3">
+        <div class="project6"></div>
+        <span>Css Designs</span>
+        <p>I Create Something related to using Html and Css like - Watch , Star Animation , pointer graph , Card Animation , weather . </p>
+        <br><br>
+        <a href="">Visit »</a>
+      </div>
+      </div>
+    </div>
+  </main>
+  <br>
+  <br>
+  <br>
+  <footer>
+    <br>
+    <label for="" class="logo">Lahsiv</label>
+    <br>
+    <br>
+    <div class="footercontact" >
+    <div class="contact-form"  
+    data-aos="fade-right"
+     data-aos-offset="50"
+     data-aos-easing="ease-in-sine" >
+    <p id="footertext">Contact Us</p>
+     <form action="home.html" target="_self" >
+    <label for=""></label>
+    <input type="text" id="" placeholder="your name" required><br>
+    <label for=""></label>
+    <input type="email" id="" placeholder="email" required><br>
+    <label for="textarea"></label>
+    <textarea name="" id="textarea" cols="30" rows="6" placeholder="write your words……"></textarea><br>
+    <button>Submit</button>
+    </form>
+    </div>
+    
+    <br>
+    
+    <div class="footercontactinfo">
+      <p id="footertext">
+        <i class="fa-solid fa-location-dot"> </i> Where to find Us
+      </p>
+      <li>H.no-112A,G-11,Nangli Diary, Najafgarh</li>
+      <li>New Delhi - 110043</li>
+    <br>
+      <p id="footertext"><i class="fa-solid fa-envelope"> </i> Contact Us</p>
+      <p>lahsiv.833@gmail.com</p>
+      <p>Phone : ( +91 ) 9599 630 989</p>
+      <br>
+    </div>
+   <!--  <p><i class="fa-solid fa-location-dot"> <span> H.no-112A,G-11,Nangli Diary, Najafgarh,N.D.-110043 </span></i></p>
+   <p><i class="fa-solid fa-envelope"> <span> lahsiv.833@gmail.com </span></i></p> -->
+    <div id="footer-fa-brands">
+    <a href="mailto:lahsiv.833@gmail.com"><i class="fa-brands fa-google"></i></a>
+    <a href="https://github.com/lahsivp"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.instagram.com/iam_vishal_2004?igsh=MXJsNWxib21pM2ZsZw=="><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <br><br>
+    <div class="copyright">
+     <p>Copyright &copy; 2024 All rights Reserved &reg; | This Portfolio made by <span>LAHSIV</span></p>
+    </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
