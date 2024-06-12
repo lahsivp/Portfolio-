@@ -187,7 +187,7 @@ nav ul li a{
   display: inline-block;
   max-width: 800px;
   border-radius: 8px;
-  padding: 20px 3vw 50px;
+  padding: 20px 5vw 50px;
   box-shadow: inset 2px 2px 4px #ffffff90, 6px 8px 15px #00000090;
   background-image: linear-gradient(200deg,#00000000 .1%,#00008090 29.9%,#00000000 70%);
 }
@@ -306,9 +306,7 @@ h3,.about h1,h2{
   background-size: cover;
 }
 .project1:hover,.project2:hover,.project3:hover{
-  height: auto;
-  top: -.5px;
-  left: -.5px;
+  box-shadow: 6px 8px 15px #00000090, 0px 0px 16px 4px#ffffff50;
 }
 
 .project4{
@@ -489,8 +487,17 @@ h3,h2{
   float: left;
   margin-right: 20vw;
 }
+.skill-container {
+  width: 90%;
+  display: inline-block;
+  max-width: 800px;
+  border-radius: 8px;
+  padding: 20px 3vw 50px;
+  box-shadow: inset 2px 2px 4px #ffffff90, 6px 8px 15px #00000090;
+  background-image: linear-gradient(200deg,#00000000 .1%,#00008090 29.9%,#00000000 70%);
+}
 
-
+   
 }
 
 @media (min-width:701px) and (max-width:5000px){
