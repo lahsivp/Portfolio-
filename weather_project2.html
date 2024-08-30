@@ -18,6 +18,25 @@
     background: rgb(194 206 219);
     background: linear-gradient(205deg, rgb(238 233 245) 0%, rgb(30 34 42) 100%);
   }
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
   .main{
     width: 100%;
     /* height: 1000px; */
@@ -392,7 +411,7 @@
       <iframe src="Weather-frame.html" id="iframe2" frameborder="0" style="display: none;"></iframe>
        
        <button id="switchBtn2" onclick="switchIframe2()"></button>
-      <iframe src="https://www.google.com/search?igu=1" id="iframe3" frameborder="0" style="display: none;"></iframe>
+      <iframe src="https://www.google.com/search?igu=1" width="100%" id="iframe3" frameborder="0" style="display: none;"></iframe>
        
 <button id="switchBtn3" onclick="switchIframe3()"></button>
       <iframe src="https://www.youtube.com/embed/ID" 
