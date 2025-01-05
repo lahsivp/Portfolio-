@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Screen</title>
+  <style>
+    * {
+      margin: -0px;
+      padding: -0px;
+      /* border: .1px solid red; */
+      color: white;
+      font-family: calibri;
+    }
+    
+    body {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      height: 100vh;
+      /* background-color: #f0f0f0; */
+      font-family: Arial, sans-serif;
+      background: url(/lock-wall1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    
+    .slider {
+      position: relative;
+      width: 100%;
+      /* background-color:#9c3c3c50; */
+      height: 600px;
+      overflow: hidden;
+      /* margin: auto; */
+    }
+    
+    .slides {
+      
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    
+    .slide {
+      min-width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+    }
+    
+    
+    .timediv{
+      position: absolute;
+      top: 24px;
+      left: 24px;
+    }
+    
+    #time_main{
+  display: inline-block;
+  /* background-color: #ffffff50; */
+  font-size: 42px;
+  font-weight: 300;
+}
+
+#dd-mm-yy{
+  display: inline-block;
+  font-size: 10px;
+  color: lightgrey;
+}
+    
+    
+    .nav-dots {
+      text-align: center;
+    }
+    
+    .dot {
+      height: 4px;
+      width: 4px;
+      margin: 0 2px;
+      background-color: #ffffff20;
+      border-radius: 50%;
+      display: inline-block;
+      cursor: pointer;
+    }
+    
+    .active {
+      background-color: white;
+    }
+    
+    img {
+      width: 100%;
+    }
+    
+    .bottom {
+      position: absolute;
+      bottom: 20px;
+    }
+    
+    .bottom_bar {
+      position: absolute;
+      bottom: 14px;
+      width: 40%;
+      /* height: 4px; */
+      border-radius: 25px;
+      padding: 1.6px 0px;
+      /* margin-left: 30%; */
+      margin: auto;
+      background-color: #ffffffcc;
+      /* background-color: red; */
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="slider">
+    <div class="slides">
+      <div class="slide">
+        
+        <div class="timediv">
+        <div id="time_main"></div>
+        <br>
+        <div id="dd-mm-yy"></div>
+        </div>
+        
+        <img src="home1.png" alt="" usemap="#image-map">
+        
+        <map name="image-map">
+          <area target="_self" alt="Google" title="Google" href="https://www.google.com/search?igu=1" coords="29,338,302,377"   shape="rect">
+          <area target="_self" alt="" title="" href="under-maintanence.html" coords="31,416,69,454" shape="rect">
+          <area target="_self" alt="" title="" href="gallery.html" coords="109,417,146,453" shape="rect">
+          <area target="_self" alt="" title="" href="https://www.jopi.com/?gad_source=1&gclid=CjwKCAiAxKy5BhBbEiwAYiW--9EMYLSpNbCD3bpJxlObhZTAjn1pmImGMW2WKesoUElGF-54EcS3_hoCZ0IQAvD_BwE" coords="187,417,222,454" shape="rect">
+          <area target="_self" alt="" title="" href="https://en.aptoide.com/" coords="265,417,302,453" shape="rect">
+          <area target="_self" alt="" title="" href="https://www.google.com/search?igu=1" coords="31,518,67,553" shape="rect">
+          <area target="_self" alt="" title="" href="https://www.youtube.com/embed/ID" coords="110,517,144,553" shape="rect">
+          <area target="_self" alt="" title="" href="map.html" coords="187,517,223,553" shape="rect">
+          <area target="_self" alt="" title="" href="calculator.html" coords="265,516,302,555" shape="rect">
+        </map>
+
+      </div>
+      <div class="slide">
+        <img src="home2.png" usemap="#image-map2" alt="">
+
+<map name="image-map2">
+    <!-- <area target="_self" alt="" title="" href="" coords="106,15,149,57" shape="rect"> -->
+    <area target="_self" alt="" title="" href="under-maintanence.html" coords="184,14,227,57" shape="rect">
+    <area target="_self" alt="" title="" href="under-maintanence.html" coords="262,14,305,56" shape="rect">
+    <!-- <area target="_self" alt="" title="" href="" coords="28,114,71,157" shape="rect"> -->
+    <area target="_self" alt="" title="" href="under-maintanence.html" coords="106,114,148,156" shape="rect">
+    <area target="_self" alt="" title="" href="Weather-frame.html" coords="184,114,227,157" shape="rect">
+    <area target="_self" alt="" title="" href="https://i.mi.com/" coords="28,215,70,257" shape="rect">
+</map>
+        
+      </div>
+    </div>
+    <div class="nav-dots">
+      <span class="dot active" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+    </div>
+  </div>
+  <img src="home3.png" class="bottom" alt="" usemap="#image-map3">
+
+<map name="image-map3">
+    <area target="_self" alt="" title="" href="" coords="28,21,70,62" shape="rect">
+    <area target="_self" alt="" title="" href="" coords="107,21,147,62" shape="rect">
+    <area target="_self" alt="" title="" href="https://chrome.com/" coords="185,21,225,62" shape="rect">
+    <area target="_self" alt="" title="" href="camera.html" coords="262,20,305,63" shape="rect">
+</map>
+  
+  <div class="bottom_bar"></div>
+  <script>
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        // Prevent exceeding bounds
+        if (index >= slides.length) return;
+        if (index < 0) return;
+
+        slides.forEach((slide, i) => {
+            //slide.classList.remove('active');
+            dots[i].classList.remove('active');
+            if (i === index) {
+                //slide.classList.add('active');
+            }
+        });
+
+        document.querySelector('.slides').style.transform = `translateX(-${index * 100}%)`;
+        dots[index].classList.add('active');
+    }
+
+    function currentSlide(index) {
+        if (index < 0 || index >= document.querySelectorAll('.slide').length) return;
+        currentIndex = index;
+        showSlide(currentIndex);
+    }
+
+    let touchstartX = 0;
+    let touchendX = 0;
+
+    const slider = document.querySelector('.slider');
+
+    slider.addEventListener('touchstart', (event) => {
+        touchstartX = event.changedTouches[0].screenX;
+    });
+
+    slider.addEventListener('touchend', (event) => {
+        touchendX = event.changedTouches[0].screenX;
+        handleGesture();
+    });
+
+    function handleGesture() {
+        if (touchendX < touchstartX) {
+            if (currentIndex < document.querySelectorAll('.slide').length - 1) {
+                currentIndex++;
+            }
+        }
+        if (touchendX > touchstartX) {
+            if (currentIndex > 0) {
+                currentIndex--;
+            }
+        }
+        showSlide(currentIndex);
+    }
+  </script>
+  
+  
+  <script>
+      function updateTime() {
+    const now = new Date();
+
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+  //  const seconds = now.getSeconds().toString().padStart(2, '0');
+
+    const days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thursday', 'Fri', 'Sat'];
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+    const day = days[now.getDay()];
+    const date = now.getDate();
+    const month = months[now.getMonth()];
+    const year = now.getFullYear();
+
+    const timeString = `${hours}:${minutes}`;
+    const dateString = `${day}, ${date} ${month}, ${year}`;
+
+    document.getElementById('time_main').textContent = timeString;
+    document.getElementById('dd-mm-yy').textContent = dateString;
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+
+    </script>
+  
+  <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('keydown', event => {
+    if (event.key === 'F12' || (event.ctrlKey && event.key === 'u')) {
+      event.preventDefault();
+    }
+  });
+</script>
+  
+</body>
+
+</html>

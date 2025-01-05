@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Unlock Interface</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    * {
+      margin: -0px;
+      padding: -0px;
+      /* border: .1px solid red; */
+      color: white;
+      font-family: calibri;
+    }
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      /* background-color: #f0f0f0; */
+      font-family: Arial, sans-serif;
+      /* background: black; */
+      background: url(/lock-wall.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+    }
+    
+    #container {
+      background: #00000020;
+      /* background: #ffffff20; */
+      backdrop-filter: blur(1px);
+      padding: 20px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+    }
+    
+    .input-fields {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .digit {
+      width: 40px;
+      height: 40px;
+      font-size: 24px;
+      text-align: center;
+      border: none;
+      margin: 0 5px;
+      background-color: transparent;
+      border-bottom: 2px solid #ccc;
+      /* border-radius: 5px; */
+    }
+    .number-pad {
+      margin-top: 200px;
+      width: 100%;
+    }
+    .row{
+      padding: 0px 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    button {
+      padding: 15px;
+      font-size: 22px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    
+    
+    .enter-btn {
+      margin-top: 20px;
+      background-color: #ffffff20;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+    
+    #message {
+          margin-top: 80px;
+          margin-bottom: 40px;
+          font-size: 16px;
+      }
+    
+    iframe {
+      display: none;
+      width: 100%;
+      position: absolute;
+      bottom: 14px;
+      left: 0px;
+      height: 700px;
+      border: none;
+      z-index: 2;
+    }
+    svg{
+      margin-bottom: -3px;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+  <div id="containerdiv">
+    <h2 id="message">Enter 4-Digit Password to Unlock</h2>
+    <div class="input-fields">
+      <input type="number" maxlength="1" placeholder="•" class="digit" />
+      <input type="number" maxlength="1" placeholder="•" class="digit" />
+      <input type="number" maxlength="1" placeholder="•" class="digit" />
+      <input type="number" maxlength="1" placeholder="•" class="digit" />
+    </div>
+    <div class="number-pad">
+      <div class="row">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+      </div>
+      <div class="row">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+      </div>
+      <div class="row">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+      </div>
+      <div class="row">
+        <button>0</button>
+      </div>
+    </div>
+    <button class="enter-btn">Enter
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="16px"><path fill="currentcolor" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+    </button>
+  </div>
+    <iframe id="iframe" src="home-screen.html"></iframe> 
+  </div>
+  
+  <script>
+    const digits = document.querySelectorAll('.digit');
+        const buttons = document.querySelectorAll('.number-pad button');
+        const messageDiv = document.getElementById('message');
+        const iframe = document.getElementById('iframe');
+        const containerdiv = document.getElementById('containerdiv');
+        const correctPassword = '3344';
+        let attempts = 0;
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                for (let i = 0; i < digits.length; i++) {
+                    if (digits[i].value === '') {
+                        digits[i].value = button.textContent;
+                        break;
+                    }
+                }
+            });
+        });
+
+        document.querySelector('.enter-btn').addEventListener('click', () => {
+            const password = Array.from(digits).map(input => input.value).join('');
+            if (password === correctPassword) {
+                iframe.style.display = 'block';
+                document.body.style.backgroundImage = 'none';
+                document.body.style.backgroundColor = 'black';
+                containerdiv.style.display = 'none';
+                
+                disableInputs();
+                messageDiv.textContent = '';
+            } else {
+                attempts++;
+                messageDiv.textContent = 'Incorrect password. Please try again.';
+                if (attempts >= 2) {
+                    messageDiv.textContent = 'Connect to owner.';
+                }
+            }
+            // Clear the input fields after each attempt
+            digits.forEach(input => input.value = '');
+        });
+
+        function disableInputs() {
+            digits.forEach(input => input.disabled = true);
+            buttons.forEach(button => button.disabled = true);
+            document.querySelector('.enter-btn').disabled = true;
+        }
+  </script>
+</body>
+
+</html>
