@@ -426,6 +426,7 @@ h2::after {
   height: 180px;
   background-position: center;
   background-size: cover;
+  margin-bottom: 10px;
 }
 
 .project1-img {
@@ -443,10 +444,10 @@ h2::after {
 
 .project p {
   font-size: 10px;
+  margin-top: 10px;
 }
 
 .project span {
-  line-height: 80px;
   font-size: 22px;
 }
 
