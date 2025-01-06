@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    /* font-family: 'Montserrat',sans-serif; */
+        /* border: .1px solid red; */
+        color: black;
+    font-family: jost,sans-serif;
+    /* transition: all ease 1s; */
+}
+body{
+    background-color: #00000008;
+}
+header{
+    /* position: inherit; */
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+.navbar-toggler{
+    color: transparent;
+    border: none;
+}
+.logo{
+    /* width: 1px; */
+    height: 40px;
+}
+.dropdown .btn{
+    border: none;
+    /* width: 200px; */
+    background-color: #cd2c22;
+    border-radius: 6px;
+    color: #fff;
+    padding: 8px 28px 10px 18px;
+}
+.btn:hover{
+      background-color: #cd2c22;
+}
+.nav-link i{
+    padding: 0px 10px;
+    color: white;
+}
+main{
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+.main-discription{
+    position: absolute;
+    top: 0px;
+    padding: 100px 10vw 0px;
+    text-align: center;
+    /* background-color: #00000050; */
+    background-image: linear-gradient(90deg, #00000000, #00000050,#00000050, #00000000);
+    width: 90%;
+    margin-left: 5%;
+    height: 100%;
+}
+.main-discription h1{
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    filter: drop-shadow(10px 6px 3px #000000);
+}
+i{
+    filter: drop-shadow(10px 6px 4px #00000090);
+}
+.main-discription p{
+    filter: drop-shadow(10px 6px 3px #000000);
+    color: white;
+    font-size: 18px;
+}
+
+
+.main-card{
+    padding: 60px 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.main-card-logo{
+    display: block;
+}
+.main-card-logo i{
+    font-size: 44px;
+    color: #cd2c22;
+
+}
+
+.main-card p{
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+.main-card-div{
+    /* width: 300px; */
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+hr {
+    width: 100%;
+    border: none;
+    height: 10px;
+    background-color: lightgray;
+}
+
+.explore,.blog,footer{
+    width: 100%;
+    padding: 50px 0px;
+}
+.explore-text,.blog-text{
+    text-align: center;
+}
+.explore-text h2,h3,h4,h5{
+    font-size: 32px;
+    font-weight: bold;
+}
+.explore-div ,.explore-routes-div,.blog-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    padding: 10px 4vw;
+}
+
+.explore-div .explore-divall{
+    border: 1px dotted lightgrey;
+    width: 350px;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.explore-image-div{
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.explore-divall img{
+    transition: all 0.3s;
+    width: 100%;
+}
+.explore-divall img:hover{
+    transform: scale(1.1) ;
+}
+
+/* .explore-div .explore-divall img{
+    display: block;
+    width: 250px;
+    height: auto;
+    transform: scale(0.94);
+    transition: all 0.3s;
+}
+
+.explore-div .explore-divall img:hover{
+    transform: scale(0.98) ;
+} */
+
+.explore-divall span{
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.explore-routes{
+    width: 100%;
+    padding: 60px 0px;
+    background-color: #00000010;
+}
+.explore-routes-div{
+    padding-top: 30px;
+}
+.explore-routes-divall{
+    width: 250px;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.explore-routes-divall img{
+    width: 100%;
+    /* transform: scale(0.94); */
+    transition: all 0.3s;
+}
+.explore-routes-divall img:hover{
+    transform: scale(1.1) ;
+}
+
+ 
+.card-image-div img{
+    transition: all ease-in-out 0.3s;
+}
+
+.card-image-div img:hover{
+    transform: scale(1.1) ;
+} 
+
+.card-image-div{
+    overflow: hidden;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.card-body span{
+    font-size: 22px;
+    font-weight: bold;
+}
+.card-body i{
+    margin: 0px 10px;
+    font-size: 20px;
+    color: #cd2c22;
+}
+.explore-routes-divall-price{
+    text-align: right;
+}
+.explore-routes-divall-price span{
+    color: #cd2c22;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.explore-text button{
+        padding: 16px 50px;
+        background-color: #cd2c22;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        position: relative;
+        transition: 1s ease;
+        overflow: hidden;
+    }
+    .explore-text button:hover::after{
+        /* background-color: #ffffff20; */
+        background-image: linear-gradient(0deg,#ffffff00,#ffffff40,#ffffff00);
+        padding: 20px 100px;
+            content: " ";
+            /* width: 40px; */
+            /* height: 20px; */
+            position: absolute;
+            top: -20px;
+            left: -100px;
+            transform: rotate(-42deg);
+            animation: button 1s ;
+            
+    }
+@keyframes button {
+    0%{
+        top: -20px;
+        left: 0;
+    }
+    50%{
+        margin-left: 260px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
+
+
+.explore-text button i{
+    color: white;
+    margin: 0px 10px;
+}
+
+
+.testimonial{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 60px 0px;
+}
+
+
+
+.bg-light-primary{
+        background-color: #cd2c2210;
+        padding: 6px 4px;
+        border-radius: 50%;
+}
+
+.fa-star:before {
+    color: gold;
+    font-size: 10px;
+    margin: 0px -20px 0px -10px;
+    padding: -10px;
+}
+
+
+
+
+main .swiffy-slider, main .slider-container{
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+main .slider-container img{
+    width: 100%;
+    height: 90vh;
+}
+
+
+
+
+.blog{
+    background-color: #00000006;
+}
+.blog-div{
+    margin: 20px 0px;
+}
+.blog-divall{
+    width: 300px;
+    min-width: 200px;
+    height: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.blog-divall img{
+    width: 100%;
+    border-radius: 8px;
+}
+.blog-divall button{
+    border: none;
+    border-radius: 4px;
+    background-color: #90ee9080;
+    padding: 4px 18px;
+    font-size: 12px;
+    color:darkgreen;
+    margin: 10px 0px;
+}
+.blog-divall span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.blog-divall a{
+    text-decoration: none;
+    color: #cd2c22;
+    font-weight: bold;
+}
+.blog-divall i{
+    color: #cd2c22;
+    font-weight: bold;
+    font-size: 12px;
+    filter: drop-shadow(10px 6px 3px #00000000);
+}
+
+footer{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    padding: 60px 4vw 160px;
+}
+footer .logo{
+    margin: 20px 0px;
+}
+footer i{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #00000020;
+}
+footer i:hover{
+    color: #cd2c22;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    line-height: 30px;
+}
+
+footer a:hover{
+    color: #cd2c22;
+}
+footer span{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.footer-4st{
+    max-width: 280px;
+}
+.footer-1st{
+    max-width: 280px;
+}
+.footer-4st img{
+    width: 100%;
+}
+.footer-our-partners-img{
+    width: 100%;
+}
+.footer-our-partners-img img{
+    width: 32%;
+}
+.footer-last{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 20px 4vw 0px;
+}
+.footer-last p{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:720px) {
+    
+
+    main .swiffy-slider, main .slider-container{
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
+    }
+    main .slider-container img{
+        width: 100%;
+        height: 90vh;
+    }
+        
+    .main-discription h1{
+        font-size: 38px;
+        font-weight: bold;
+    }
+
+    .collapse{
+        display: none;
+    }
+    
+}
+@media (min-width:992px) {
+    .offcanvas{
+        display: none;
+
+    }
+    /* header{
+        position: sticky;
+        top: 0px;
+        z-index: 3;
+    } */
+}
